@@ -1,0 +1,57 @@
+book = "Treasure Island"
+
+print "Did you clean up your messes?"
+
+answer = raw_input()
+
+def bedtime5():
+    answer = raw_input()
+    if answer == "y":
+        print "CONGRATULATIONS!  I am so proud of you!  Now we can snuggle and read " + book + "."
+    
+    else:
+        print "Hurry up! Then come back and type y again."
+        bedtime5()
+        
+def bedtime4():
+    answer = raw_input()
+    if answer == "y":
+        print "Did you put your dirty clothes in your hamper?"
+        bedtime5()
+    else:
+        print "Quick, so we can read a story! Now..."
+        bedtime4()
+def bedtime3():
+    print "Did you brush your teeth, floss too?"
+    answer = raw_input()
+    if answer == "y":
+        print "Good boy! Time for Pajamas :)Come back and type y when you are done."
+        bedtime4()
+    else:
+        print "Go back and floss!"
+        bedtime3()
+        
+def bedtime2():
+    print "Have you gone to the bathroom?"
+    answer = raw_input()
+    if answer == "y":
+        print "Good Job!  Now brush your teeth."
+        bedtime3()
+    else:
+         print "If you want a bedtime story, go pee now!"
+            
+def bedtime():
+    if answer == "y":
+        print "Good Job!  Now go to the bathroom."
+        bedtime2()
+        
+    
+    elif answer == "n":
+        print "Well then get to it!  Clean up!"
+    
+    else:
+        print "Please type 'y' for yes or 'n' for no you silly!"
+        
+bedtime()
+# Ask Python to print sqrt(25) on line 3.
+
